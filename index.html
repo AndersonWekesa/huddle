@@ -5,7 +5,7 @@
         <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
 
                /* header{
@@ -202,6 +202,10 @@
                     background-color: white;
                  }
 
+                    button:hover{
+                        background-color: aqua;
+                    }
+
 
             main{
                 margin-top: 70px;
@@ -211,7 +215,8 @@
                     width: 80%;
                     /*width: 1300px;
                     height: 500px;*/
-                    border: 1px solid green;
+                    box-shadow: 1px 1px 1px 1px grey;
+                    /*border: 1px solid green;*/
                     display: flex;
                     margin: auto;
                     justify-content: center;
@@ -232,7 +237,8 @@
                     width: 80%;
                     /*width: 1300px;
                     height: 500px;*/
-                    border: 1px solid green;
+                    box-shadow: 1px 1px 1px 1px grey;
+                    /*border: 1px solid green;*/
                     display: flex;
                     margin: auto;
                     justify-content: center;
@@ -256,7 +262,8 @@
                     width: 80%;
                     /*width: 1300px;
                     height: 500px;*/
-                    border: 1px solid green;
+                    box-shadow: 1px 1px 1px 1px grey;
+                    /*border: 1px solid green;*/
                     display: flex;
                     margin: auto;
                     justify-content: center;
@@ -282,7 +289,6 @@
                     border: 1px solid grey;
                     margin-bottom: -50px;
                     background-color: white;
-                    z-index: 1;
                     position: relative;
                     margin-top: 120px;
                     }   
@@ -292,6 +298,10 @@
                             height: 200px;
                             margin: auto;
                             padding-top: 20px;
+                        }
+
+                        .card-button{
+                            background-color:palevioletred
                         }
 
                 .foot{
@@ -415,7 +425,7 @@
         <div class="card">
             <div class="card-contents"> <!--formerly 'inner'-->
                 <h2>Ready To Build Your Community?</h2>
-                <button style="margin-left:100px;background-color:palevioletred;">Get Started For Free</button>
+                <button style="margin-left:100px;" class="card-button">Get Started For Free</button>
             </div>
         </div>
 
