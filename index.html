@@ -5,7 +5,7 @@
         <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">">
         <style>
 
                /* header{
@@ -256,6 +256,56 @@
                     margin-top: 20px;
                 }
 
+            footer{
+                background-color: black;
+            }
+
+                .card{
+                    width: 600px;
+                    height: 180px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: 8px;
+                    border: 1px solid grey;
+                    /*margin-bottom: -90px;*/
+                    background-color: white;
+                    /*z-index: 1;
+                    position: relative;*/
+                    margin-top: 120px;
+                    }   
+
+                        .card-contents{
+                            width: 400px;
+                            height: 200px;
+                            margin: auto;
+                            padding-top: 20px;
+                        }
+
+                .foot{
+                    color: white;
+                    display:flex;
+                }
+
+                    .details{
+                        width: 400px;
+                        height: 350px;
+                        padding-left: 40px;
+                        /*margin-top: 130px;*/
+                    }
+
+                    .socials{
+                        width: 300px;
+                        height: 350px;
+                    }
+
+                        .fa{
+                            border-radius:50%;
+                            border:1px solid white;
+                            background-color: transparent;
+                            color:white;
+                            text-decoration:none;
+                            font-size:40px;
+                        }
 
         </style>
     </head>
@@ -294,9 +344,9 @@
                     <div class="intro-text">
                         <div style="width: 400px; height: 400px;">
                             <h2>Growing Together</h2>
-                            <P>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
+                            <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
                                 the insightful conversations you miss out on with a feedback form.
-                            </P>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -338,74 +388,59 @@
                 </div>
             </div>
         </main>
-    
-        <!--<main>
-            <div class="grow_together">
-                <div>
-                    <div class="">
-                        <div> style="width: 400px; height: 400px;"
-                            <h2>Growing Together</h2>
-                            <P>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
-                                the insightful conversations you miss out on with a feedback form.
-                            </P>
-                        </div>
-                    </div>
-                </div>
 
-                <div>
-                    <img class="" src="illustration-grow-together.svg">
-                </div>
-            </div>
-        -->
 
-<!--
-            <div class="flowing_conversations">
-                <div>
-                    <img class="flowing-pic" src="illustration-flowing-conversation.svg">
-                </div>
-                <div>
-                    <div class="">
-                        <div> style="width: 400px; height: 400px;"
-                            <h2>Growing Together</h2>
-                            <P>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
-                                the insightful conversations you miss out on with a feedback form.
-                            </P>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        -->
-<!--
-            <div class="your_users">
-                <div>
-                    <div class="">
-                        <div> style="width: 400px; height: 400px;"
-                            <h2>Your Users</h2>
-                            <P> It takes no time at all to integrate Huddle to your app's authentication solution. This means,
-                                once signed into your app, your users can strt chatting immediately.
-                            </P>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img class="flowing-pic" src="illustration-your-users.svg">
-                </div>
-            </div>
-        </main>
-    -->
-
-    <!--
         <footer>
-            <div class="details">
-                <img src="logo.svg"> style="width:190px; height:50px;"
-                <p>lorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt, ut labore et dolore magnam aliquam quaerat voluptatem
-                </p>
-                <p>+1-543-123-4567</p>
-                <p>example@huddle.com</p>
+            <div class="card">
+                <div class="card-contents"> <!--formerly 'inner'-->
+                    <h2>Ready To Build Your Community?</h2>
+                    <button style="margin-left:100px;background-color:palevioletred;">Get Started For Free</button>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="details">
+                    <img src="logo.svg" style="width:190px; height:50px;">
+                    <div style="display:flex;">
+                        <i class="fa fa-map-marker"></i>
+                        <p>lorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora 
+                            incidunt, ut labore et dolore magnam aliquam quaerat voluptatem
+                        </p>
+                    </div>
+                    <div style="display:flex">
+                        <i class="fa fa-phone"></i>
+                        <p>+1-543-123-4567</p>
+                    </div>
+                    <div style="display:flex">
+                        <i class="fa fa-envelope"></i>
+                        <p>example@huddle.com</p>
+                    </div>
+                </div>
+
+                <div class="navig" style="width:100px">
+                    <p>About Us</p>
+                    <p>What We Do</p>
+                    <p>FAQ</p>
+                </div>
+    
+                <div class="navig" style="width:100px">
+                    <p>Career</p>
+                    <p>Blog</p>
+                    <p>Contact Us</p>
+                </div>
+
+
+                <div class="socials">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <p style="margin-top:20px">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+                </div>
+
+
+
             </div>
         </footer>
-    -->
+
 <!--
         <div>
             <div class="get_started">
@@ -434,13 +469,6 @@
                 <p>Career</p>
                 <p>Blog</p>
                 <p>Contact Us</p>
-            </div>
-
-            <div class="socials">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <p style="margin-top:20px">&copy; Copyright 2018 Huddle. All rights reserved.</p>
             </div>
 
 
