@@ -7,44 +7,57 @@
         <title>Home</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-             @media only screen and (max-width: 375px) {
-                .intro{
-                    display: none;
-                }
-
+             @media only screen and (max-width: 575px) {
+    
                 main{
                     display:flex;
                     gap: 40px;
-                    place-content: center center;
-                    flex-direction: column;
+                    place-content: center;
+                    flex-direction:column;
+                }
+
+                .intro{
+                    display:flex;
+                    flex-direction:column;
+                    margin-left:auto;
+                    margin-right:auto;
+                    text-align:center;
+                }
+
+                .inner-text{
+                    width:40%;
                 }
 
                 .grow_together{
-                    display:none;
+                    display:flex;
+                    flex-direction: column-reverse;
                 }
 
+                    .grow_together .intro-text{
+                        margin-top:50px;
+                    }
+
                 .flowing_conversations{
-                    display:none;
+                    display:flex;
+                    flex-direction:column;
                 }
 
                 .your_users{
-                    display:none;
+                    display:flex;
+                    flex-direction:column-reverse;
                 }
 
                 .intro-text{
-                    margin-left:auto;
-                    margin-right:auto;
+                    width:100%;
+                    /*margin-left:auto;
+                    margin-right:auto;*/
                 }
 
-
-
-
-
-
-
-                .card{
-                    width:95%
+                button{
+                    width:10px;
                 }
+                
+
              }
 
             header{
@@ -67,12 +80,19 @@
                 }
             
                 .intro-text{
-                    width: 640px;
+                    width:70%;
+                    /*width: 640px;*/
                     height: 400px;
                     margin: auto;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                }
+
+                .inner-text{
+                    width:70%;
+                    /*width: 400px;*/ 
+                    height: 250px;
                 }
                 
                 .intro-image{
@@ -89,7 +109,7 @@
                  }
 
                     button:hover{
-                        background-color: aqua;
+                        opacity:70%;
                     }
 
 
@@ -98,11 +118,10 @@
             }
 
                 .grow_together{
-                    width: 80%;
+                    width: 90%;
                     /*width: 1300px;
                     height: 500px;*/
                     box-shadow: 1px 1px 1px 1px grey;
-                    /*border: 1px solid green;*/
                     display: flex;
                     margin: auto;
                     justify-content: center;
@@ -120,7 +139,7 @@
                     }
 
                 .flowing_conversations{
-                    width: 80%;
+                    width: 90%;
                     /*width: 1300px;
                     height: 500px;*/
                     box-shadow: 1px 1px 1px 1px grey;
@@ -145,7 +164,7 @@
                     }
 
                 .your_users{
-                    width: 80%;
+                    width: 90%;
                     /*width: 1300px;
                     height: 500px;*/
                     box-shadow: 1px 1px 1px 1px grey;
@@ -167,7 +186,7 @@
             }
 
                 .card{
-                    width:50%;
+                    width:80%;
                     /*width: 600px;*/
                     height: 180px;
                     margin-left: auto;
@@ -181,14 +200,17 @@
                     }   
 
                         .card-contents{
-                            width: 400px;
-                            height: 200px;
+                            width: 60%;
+                            height: 160px;
                             margin: auto;
                             padding-top: 20px;
+                            background-color: red;
+                            text-align:center;
                         }
 
                         .card-button{
-                            background-color:palevioletred
+                            background-color:palevioletred;
+                            width:85%;
                         }
 
                 .foot{
@@ -243,7 +265,7 @@
 
             <div class="intro">
                 <div class="intro-text">
-                    <div style="width: 400px; height: 250px;">
+                    <div class="inner-text">
                         <h2>Build The Community Your Fans Will Love</h2>
                         <P>Huddle re-imagines the way we build commuities. You have a voice, but so does your audience. 
                             Create Connections with your users as you engage in genuine discussions.
@@ -261,7 +283,7 @@
             <div class="grow_together">
                 <div>
                     <div class="intro-text">
-                        <div style="width: 400px; height: 400px;">
+                        <div style="width: 400px; height:auto;">
                             <h2>Growing Together</h2>
                             <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
                                 the insightful conversations you miss out on with a feedback form.
@@ -273,6 +295,7 @@
                 <div>
                     <img class="intro-pic" src="illustration-grow-together.svg">
                 </div>
+
             </div>
 
             <div class="flowing_conversations">
@@ -281,7 +304,7 @@
                 </div>
                 <div>
                     <div class="intro-text">
-                        <div style="width: 400px; height: 400px;">
+                        <div style="width: 400px; height:auto;">
                             <h2>Growing Together</h2>
                             <P>Generate meaningful discussions with your audience and build a strong, loyal community. Think of
                                 the insightful conversations you miss out on with a feedback form.
@@ -294,7 +317,7 @@
             <div class="your_users">
                 <div>
                     <div class="intro-text">
-                        <div style="width: 400px; height: 400px;">
+                        <div style="width: 400px; height:auto;">
                             <h2>Your Users</h2>
                             <P> It takes no time at all to integrate Huddle to your app's authentication solution. This means,
                                 once signed into your app, your users can strt chatting immediately.
@@ -310,9 +333,9 @@
 
 
         <div class="card">
-            <div class="card-contents"> <!--formerly 'inner'-->
+            <div class="card-contents"> 
                 <h2>Ready To Build Your Community?</h2>
-                <button style="margin-left:100px;" class="card-button">Get Started For Free</button>
+                <button class="card-button">Get Started For Free</button>
             </div>
         </div>
 
@@ -363,7 +386,6 @@
 
             </div>
         </footer>
-
 <!--
         <div>
             <div class="get_started">
