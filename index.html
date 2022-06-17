@@ -56,7 +56,45 @@
                 button{
                     width:10px;
                 }
-                
+
+                .foot{
+                    display:flex;
+                    flex-direction:column;
+                }
+
+                .details{
+                    margin-left:auto;
+                    margin-right:auto;
+                    text-align:center;
+                    margin-top:20px;
+                }
+
+                    .details-text{
+                        display:flex;
+                        flex-direction:column;
+                    }
+                .socials{
+                    margin-right:auto;
+                    text-align:center;
+                    margin-top:20px;
+                }
+
+                .foot{
+                    display:flex;
+                    flex-direction:column;
+                }
+
+                .details{
+                    width:100% !important;
+                }
+
+                .links{
+                    width:100% !important;
+                }
+
+                .socials{
+                    width:100% !important;
+                }
 
              }
 
@@ -182,8 +220,8 @@
                 }
 
             footer{
-                background-color: black;
-                /*position:static;*/
+                background-color:hsl(179, 100%, 13%);
+                color:white;
             }
 
                 @keyframes floater {
@@ -203,10 +241,11 @@
                     background-color: white;
                     position: relative;
                     margin-top: 120px;
-
+                    /*
                     transform: translateY(-10%);
                     animation: floater 1.5s infinite;
                     transition: ease 0.5s;
+                    */
                 }   
 
                         .card-contents{
@@ -222,44 +261,57 @@
                             width:85%;
                         }
 
+
                 .foot{
-                    color: white;
+                    height:300px;
+                    width:100%;
+                    /*background-color:gold;*/
                     display:flex;
-                    height:400px;
-                    /*background-color:lawngreen;*/
-                    padding-top:100px;
                 }
 
-                    .details{
-                        width:350px;
-                        height: 250px;
-                        padding-left: 40px;
-                        /*margin-top: 130px;*/
-                        /*background-color: red;*/
-                    }
+                        .details{
+                            height:300px;
+                            width:33.333%;
+                            /*background-color:red;*/
+                        }
 
-                    .links{
-                        display:flex;
-                        margin-left:auto;
-                        margin-right:auto;
-                        /*background-color:aquamarine;*/
-                    }
+                        .links{
+                            height:300px;
+                            width:33.333%;
+                            /*background-color:lawngreen;*/
+                            display:flex;
+                        }
 
-                    .socials{
-                        width: 300px;
-                        height: 250px;
-                        margin-left:auto;
-                        /*background-color:gold;*/
-                    }
+                            a{
+                                color:white;
+                            }
+
+                        .socials{
+                            height:300px;
+                            width:33.333%;
+                            /*background-color:violet;*/
+                        }
 
                         .fa-facebook, .fa-twitter, .fa-instagram{
-                            border-radius:50%;
-                            
                             background-color: transparent;
                             color:white;
+                            font-size:28px;
                             text-decoration:none;
-                            font-size:40px;
+                            text-align: center;
+                            padding-top:5px;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 30px;
+                            border-color:white;
+                            color: white;
+                            border:1px solid white;
                         }
+
+                    .copyright{
+                        text-align:center !important;
+                    }
+
+            
 
         </style>
     </head>
@@ -352,89 +404,57 @@
             </div>
         </div>
 
-        <footer>
 
+        <footer>
             <div class="foot">
                 <div class="details">
-                    <img src="logo.svg" style="width:120px; height:50px;">
-                    <div style="display:flex;">
-                        <i class="fa fa-map-marker"></i>
-                        <p>lorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora 
-                            incidunt, ut labore et dolore magnam aliquam
+                    <div style="width:90%; height:100px; margin-left:auto; margin-right:auto; display:flex;">
+                        <img src="logoWhite.svg" style="margin-top:60px;">
+                    </div>
+                    <br/>
+                    <div style="width:90%; margin-left:auto; margin-right:auto; display:flex;">
+                        <img src="icon-location.svg" style="width:30px; height:30px">
+                        <p style="margin-top:0px; margin-left:5px;">
+                            Lorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora 
+                            incidunt, ut labore et dolore magnam aliquam.
                         </p>
                     </div>
-                    <div style="display:flex">
-                        <i class="fa fa-phone"></i>
-                        <p>+1-543-123-4567</p>
+                    <br/>
+                    <div style="width:90%; margin-left:auto; margin-right:auto; display:flex;">
+                        <img src="icon-phone.svg" style="width:30px; height:30px">
+                        <p style="margin-top:0px; margin-left:5px;">+1-543-123-4567</p>
                     </div>
-                    <div style="display:flex">
-                        <i class="fa fa-envelope"></i>
-                        <p>example@huddle.com</p>
+                    <br/>
+                    <div style="width:90%; margin-left:auto; margin-right:auto; display:flex;">
+                        <img src="icon-email.svg" style="width:30px; height:30px">
+                        <p style="margin-top:0px; margin-left:5px;">example@huddle.com</p>
                     </div>
                 </div>
 
                 <div class="links">
-                    <div class="navig" style="width:100px">
-                        <p>About Us</p>
-                        <p>What We Do</p>
-                        <p>FAQ</p>
+                    <div style="width:50%; margin-top:55px; height:100px; display:flex; flex-direction:column; gap:10px; text-align:center;">
+                        <a href="#" style="text-decoration:none;">About Us</a>
+                        <a href="#" style="text-decoration:none;">What We Do</a>
+                        <a href="#" style="text-decoration:none;">FAQ</a>
                     </div>
-        
-                    <div class="navig" style="width:100px">
-                        <p>Career</p>
-                        <p>Blog</p>
-                        <p>Contact Us</p>
+                    <div style="width:50%; margin-top:55px; height:100px; display:flex; flex-direction:column; gap:10px; text-align:center;">
+                        <a href="#" style="text-decoration:none;">Career</a>
+                        <a href="#" style="text-decoration:none;">Blog</a>
+                        <a href="#" style="text-decoration:none;">Contact</a>
                     </div>
                 </div>
-
-
                 <div class="socials">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <p style="margin-top:20px">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+                    <div style="margin-top:55px; text-align:center">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <div class="copyright" style="margin-top: 150px; bottom:60px; text-align:right">
+                        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+                    </div>
                 </div>
-
-
-
             </div>
         </footer>
-<!--
-        <div>
-            <div class="get_started">
-                <div class="inner">
-                    <h2>Ready To Build Your Community?</h2>
-                    <button style="margin-left:100px;background-color:palevioletred;">Get Started For Free</button>
-                </div>
-            </div>
-        <div class="footer-box">
-            <div class="details">
-                <img src="logo.svg" style="width:190px; height:50px;">
-                <p>lorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia non numquam eius modi tempora 
-                    incidunt, ut labore et dolore magnam aliquam quaerat voluptatem
-                </p>
-                <p>+1-543-123-4567</p>
-                <p>example@huddle.com</p>
-            </div>
-    
-            <div class="navig">
-                <p>About Us</p>
-                <p>What We Do</p>
-                <p>FAQ</p>
-            </div>
-
-            <div class="navig">
-                <p>Career</p>
-                <p>Blog</p>
-                <p>Contact Us</p>
-            </div>
-
-
-        </div>
-        </div>
-
-    -->
-    
     
     </body>
 
